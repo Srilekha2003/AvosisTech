@@ -22,6 +22,58 @@
     transition: 0.5s;
     z-index: 99;
 }
+/* feature  */
+.feature-item {
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #0d6efd; /* Bootstrap Primary (blue) */
+    color: #fff; /* White text by default */
+}
+
+.feature-item h3,
+.feature-item h4,
+.feature-item p,
+.feature-item a,
+.feature-item i {
+    color: #fff !important; /* Force all text and icons to white */
+}
+
+.feature-item:hover {
+    background-color: #e0e0e0 !important; /* Light grey on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item:hover h3,
+.feature-item:hover h4,
+.feature-item:hover p,
+.feature-item:hover a,
+.feature-item:hover i {
+    color: #000 !important; /* Turn text dark on hover */
+}
+
+.feature-item:hover h4,
+.feature-item:hover p,
+.feature-item:hover a {
+    color: #000 !important; /* Make text dark for contrast */
+}
+
+.feature-item:hover .bg-primary {
+    background-color: #343a40 !important; /* Darker icon bg for contrast */
+}
+
+.feature-item:hover .fa {
+    color: #fff !important; /* White icons for dark bg */
+}
+.feature-item:hover .bg-primary {
+    background-color: #fff !important;
+}
+.feature-item:hover .fa {
+    color: #0d6efd !important; /* Bootstrap primary */
+}
+
+
 
 /*** Button Start ***/
 .btn {
@@ -79,7 +131,6 @@
     color: var(--bs-white);
    
 }
-
 .btn.btn-secondary:hover {
     background: var(--bs-primary);
     border: 1px solid var(--bs-primary);
@@ -521,6 +572,7 @@
     margin-left: -30px;
     border-radius: 10px;
 }
+
 /*** About End ***/
 
 /*** Service Start ***/
