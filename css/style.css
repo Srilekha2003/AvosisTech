@@ -27,20 +27,22 @@
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background-color: #0d6efd; /* Bootstrap Primary (blue) */
-    color: #fff; /* White text by default */
+    background-color:  #e0e0e0 ; /* Bootstrap Primary (blue) */
+    color: #000; /* White text by default */
 }
 
 .feature-item h3,
 .feature-item h4,
 .feature-item p,
-.feature-item a,
-.feature-item i {
-    color: #fff !important; /* Force all text and icons to white */
+.feature-item a
+ {
+    color: #000 !important; /* Force all text and icons to white */
 }
-
+.feature-item i{
+    color: #0d6efd !important;
+}
 .feature-item:hover {
-    background-color: #e0e0e0 !important; /* Light grey on hover */
+    background-color: #00D1F9 !important; /* Light grey on hover */
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
@@ -56,11 +58,13 @@
 .feature-item:hover h4,
 .feature-item:hover p,
 .feature-item:hover a {
-    color: #000 !important; /* Make text dark for contrast */
+    color: #fff!important; /* Make text dark for contrast */
 }
-
+.feature-item .fa{
+    color: #0d6efd ;
+}
 .feature-item:hover .bg-primary {
-    background-color: #343a40 !important; /* Darker icon bg for contrast */
+    background-color: #0d6efd !important; /* Darker icon bg for contrast */
 }
 
 .feature-item:hover .fa {
@@ -70,7 +74,7 @@
     background-color: #fff !important;
 }
 .feature-item:hover .fa {
-    color: #0d6efd !important; /* Bootstrap primary */
+    color: #000  !important; /* Bootstrap primary */
 }
 
 
@@ -138,16 +142,44 @@
 /*** Topbar Start ***/
 
 /*** Navbar ***/
+.navbar-light {
+    position: relative; /* was: absolute */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--bs-light); /* solid background instead of transparent */
+    border-bottom: 1px solid var(--bs-border); /* optional */
+    z-index: 999;
+    
+}
+
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: var(--bs-white);
+    color: var(--bs-secondary);
     font-size: 17px;
     font-weight: 400;
     outline: none;
     transition: .5s;
 }
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar-light .navbar-nav .nav-item:hover::before,
+.navbar-light .navbar-nav .nav-item.active::before {
+    width: calc(100% - 2px);
+    left: 1px;
+}
+
+.navbar-light .navbar-nav .nav-item:hover::after,
+.navbar-light .navbar-nav .nav-item.active::after {
+    bottom: 1px;
+    opacity: 1;
+}
+
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
@@ -651,6 +683,12 @@
     color: var(--bs-primary) !important;
 }
 /*** Service End ***/
+/* blog  */.hover-text-primary:hover {
+    color:#00D1F9 !important;
+}
+.hover-text-light:hover{
+    color: white;
+}
 
 
 /*** Counter Start ***/
@@ -750,6 +788,125 @@
 .blog .blog-item:hover .blog-content a:hover {
     color: var(--bs-primary) !important;
 }
+/* BRAND COLOR */
+:root {
+  --brand-color: #00D1F9;
+}
+
+/* General Link Hover */
+a.text-dark:hover,
+.hover-text-primary:hover {
+  color: var(--brand-color) !important;
+}
+
+/* Tag Hover */
+.btn-outline-primary:hover,
+.btn-outline-primary.hover-text-light:hover {
+  background-color: var(--brand-color);
+  color: #fff;
+  border-color: var(--brand-color);
+}
+
+/* Recent Posts Background */
+.recent-posts {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Recent Post Hover */
+.recent-posts a:hover {
+  color: var(--brand-color) !important;
+}
+
+/* Category Hover */
+.bg-light a:hover {
+  color: var(--brand-color) !important;
+  transform: translateX(5px);
+  transition: all 0.2s ease;
+}
+
+/* Breadcrumb active */
+.breadcrumb-item.active.text-primary {
+  color: var(--brand-color) !important;
+}
+
+/* Back to top button hover */
+.back-to-top:hover {
+  background-color: var(--brand-color) !important;
+  border-color: var(--brand-color) !important;
+}
+
+/* Navbar Active Link */
+.navbar-nav .nav-link.active {
+  color: var(--brand-color) !important;
+}
+/* BLOG TITLE HOVER */
+h1.hover-text-primary:hover {
+  color: var(--brand-color) !important;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+/* SIDEBAR LINK HOVER + SHADOW */
+.bg-light a {
+  transition: all 0.2s ease;
+  padding-left: 8px;
+}
+.bg-light a:hover {
+  color: var(--brand-color) !important;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding-left: 15px;
+}
+
+/* TAGS HOVER with SHADOW */
+.btn-outline-primary {
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background-color: var(--brand-color);
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* BLOG POST ITEM HOVER */
+.recent-posts .d-flex:hover {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+
+/* OPTIONAL: CARD BOX SHADOW FOR SIDEBAR */
+.sidebar-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+/* DARK MODE SUPPORT (optional) */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+body.dark-mode .text-dark {
+  color: #eee !important;
+}
+body.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+body.dark-mode a.text-dark,
+body.dark-mode a.h6 {
+  color: #ccc !important;
+}
+body.dark-mode a:hover {
+  color: var(--brand-color) !important;
+}
+
 /*** Blog End ***/
 
 /*** Team Start ***/
@@ -953,6 +1110,9 @@
 }
 /*** Footer End ***/
 
+
+
+
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -961,3 +1121,22 @@
 /*** copyright end ***/
 
 
+@media (max-width: 576px) {
+  .recent-posts .d-flex {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .recent-posts img {
+    margin: 0 auto 10px;
+  }
+
+  .sidebar-card {
+    padding: 15px !important;
+  }
+
+  .btn-lg, .btn-md {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

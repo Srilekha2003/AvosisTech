@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Blog2 - Avosis</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Bootstrap & Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navbar & Hero -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="text-primary"><img src="img/logo.png" alt="Logo"> Avosis</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="career.html" class="nav-item nav-link">Career</a>
+                    <a href="blog.html" class="nav-item nav-link active">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4">Get In Touch</a>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown">Blog Insights</h4>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Blog2</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto">
+                        <input type="search" class="form-control p-3" placeholder="keywords">
+                        <span class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Detail -->
+    <div class="container-fluid py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <!-- Blog Content -->
+                <div class="mb-5 pt-5">
+                    <img class="img-fluid w-100 mb-4 rounded" src="img/blog-2.jpg" alt="">
+                    <h1 class="display-5 text-dark mb-4">Unlocking the Power of Node.js: Creating Scalable & High-Performance Applications</h1>
+
+                    <p class="text-body">Introduction to Node.js</p>
+                    <ul class="text-body">
+                        <li>A brief look into Node.js and its importance in modern server-side JavaScript programming.</li>
+                        <li>Why developers choose Node.js for building fast, scalable backend applications.</li>
+                    </ul>
+
+                    <p class="text-body">Understanding Event-Driven Architecture</p>
+                    <ul class="text-body">
+                        <li>Exploring Node.js’s non-blocking I/O and event-driven design.</li>
+                        <li>How it differs from traditional, synchronous programming approaches.</li>
+                    </ul>
+
+                    <p class="text-body">Preparing Your Development Setup</p>
+                    <ul class="text-body">
+                        <li>A detailed walkthrough to configure your system for Node.js development.</li>
+                        <li>Installing Node.js, npm, and selecting the right code editor or IDE.</li>
+                    </ul>
+
+                    <p class="text-body">Creating RESTful APIs Using Express.js</p>
+                    <ul class="text-body">
+                        <li>Getting started with Express.js for web application development.</li>
+                        <li>Defining routes, managing HTTP methods, and utilizing middleware functions.</li>
+                    </ul>
+
+                    <p class="text-body">Database Integration with MongoDB</p>
+                    <ul class="text-body">
+                        <li>Introduction to MongoDB and its advantages as a NoSQL solution.</li>
+                        <li>Using Mongoose to connect MongoDB with Node.js, including data schemas and validation techniques.</li>
+                    </ul>
+
+                    <p class="text-body">User Authentication & Access Control</p>
+                    <ul class="text-body">
+                        <li>Core concepts of user authentication and permission management.</li>
+                        <li>Implementing JWT-based login systems with Passport.js integration.</li>
+                    </ul>
+
+                    <p class="text-body">Deploying Node.js Apps to the Cloud</p>
+                    <ul class="text-body">
+                        <li>Methods for deploying your Node.js project to platforms like AWS or Heroku.</li>
+                        <li>Tips for production environment setup and performance enhancements.</li>
+                    </ul>
+
+                    <p class="text-body">Boosting Performance in Node.js Apps</p>
+                    <ul class="text-body">
+                        <li>Strategies to fine-tune your Node.js apps for speed and efficiency.</li>
+                        <li>Utilizing caching, asynchronous coding, and load balancing to improve scalability.</li>
+                    </ul>
+
+                    <p class="text-body">Real-World Implementation Scenarios</p>
+                    <ul class="text-body">
+                        <li>Showcasing real-life applications built with Node.js and their system design.</li>
+                        <li>Takeaways and best practices adopted from successful project rollouts.</li>
+                    </ul>
+
+                    <p class="text-body">Wrapping Up & Learning More</p>
+                    <ul class="text-body">
+                        <li>Recap of major topics discussed throughout the post.</li>
+                        <li>Suggested resources and materials to further advance your Node.js expertise.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="mb-5 pt-5">
+                    <h3 class="text-dark mb-4">Categories</h3>
+                    <div class="bg-light p-4 d-flex flex-column">
+                        <a href="#" class="text-dark h5 mb-3"><i class="bi bi-arrow-right text-primary me-2"></i>Tech Training</a>
+                        <a href="#" class="text-dark h5 mb-3"><i class="bi bi-arrow-right text-primary me-2"></i>Placement Support</a>
+                        <a href="#" class="text-dark h5 mb-3"><i class="bi bi-arrow-right text-primary me-2"></i>Corporate Coaching</a>
+                        <a href="#" class="text-dark h5 mb-3"><i class="bi bi-arrow-right text-primary me-2"></i>Career Guidance</a>
+                        <a href="#" class="text-dark h5 mb-3"><i class="bi bi-arrow-right text-primary me-2"></i>Resume Writing</a>
+                        <a href="#" class="text-dark h5 mb-3"><i class="bi bi-arrow-right text-primary me-2"></i>Mock Interviews</a>
+                    </div>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="mb-5 recent-posts">
+                    <h3 class="text-dark mb-4">Recent Posts</h3>
+                    <div class="d-flex mb-3">
+                        <img src="img/blog-1.jpg" class="img-fluid rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <a href="blog1.html" class="text-dark h6 m-0 align-self-center hover-text-primary">Mastering React: A Comprehensive Guide for Beginners</a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img src="img/blog-2.jpg" class="img-fluid rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <a href="blog2.html" class="text-dark h6 m-0 align-self-center hover-text-primary">Demystifying Node.js: Building Scalable Apps</a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img src="img/blog-3.jpg" class="img-fluid rounded me-3" style="width: 100px; height: 100px; object-fit: cover;">
+                        <a href="blog3.html" class="text-dark h6 m-0 align-self-center hover-text-primary">The Complete Guide to Full-Stack Development</a>
+                    </div>
+                </div>
+
+                <!-- Tag Cloud -->
+                <div class="mb-5">
+                    <h3 class="text-dark mb-4">Tag Cloud</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#" class="btn btn-outline-primary hover-text-light btn-sm">Training</a>
+                        <a href="#" class="btn btn-outline-primary hover-text-light btn-sm">Recruitment</a>
+                        <a href="#" class="btn btn-outline-primary hover-text-light btn-sm">IT Consulting</a>
+                        <a href="#" class="btn btn-outline-primary hover-text-light btn-sm">Placement</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-body p-5">
+            <div class="row g-5">
+                <!-- Avosis Left Intro -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4 d-flex align-items-center">
+                    <img src="img/logo.png" alt="Avosis Logo" style="height: 30px; width: auto;" class="me-2">
+                    Avosis
+                    </h3><p class="mb-3 text-body">Avosis is committed to delivering high-quality tech education and career support.</p>
+                    <p class="mb-3 text-body">Empowering learners with tools to succeed in the digital world.</p>
+                    <div class="position-relative">
+                        <input class="form-control rounded-pill w-100 py-2 ps-4 pe-5" type="text" placeholder="Enter your email">
+                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 mt-1 me-2 py-1 px-3">SignUp</button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-body mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-body mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Services</a>
+                        <a class="text-body mb-2" href="career.html"><i class="bi bi-arrow-right text-primary me-2"></i>Career</a>
+                        <a class="text-body mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
+                        <a class="text-body" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- Get In Touch -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="text-body mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> IT Tower, Rampur, Karimnagar-TS</p>
+                    <p class=" text-body mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> Karimnagar-TS</p>
+                    <p class="text-body mb-2"><i class="bi bi-envelope-open text-primary me-2"></i> avosistechologiespvtltd@gmail.com </p>
+                    <p class="text-body mb-0"><i class="bi bi-telephone text-primary me-2"></i>+91 9398424491</p>
+                </div>
+
+                <!-- Social + Image -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex mb-3">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61552266657700&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.linkedin.com/company/msvtechnologies"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="index.html" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Avosis Technologies</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://s2swebsolutions.com">S2S Web Solutions</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-botext-body btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
+
