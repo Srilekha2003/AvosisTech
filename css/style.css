@@ -1128,6 +1128,7 @@ body.dark-mode a:hover {
   position: relative;
   overflow: hidden;
   color: whitesmoke;
+  height: 40px;
 }
 
 
